@@ -1,0 +1,21 @@
+#board {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 60pt;
+    color: #13294b;
+}
+
+.word {
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.word span {
+    display: inline-block;
+    width: 100px;
+    height: 150px;
+    margin: 10px 0px;
+    border: 10px solid black;
+    background-color:#13294b;
+}

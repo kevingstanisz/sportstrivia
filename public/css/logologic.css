@@ -1,0 +1,40 @@
+body { margin: 20px; }
+
+.sliced {
+    margin-top: 150px;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px; 
+    height:400px;
+}
+.tile { 
+    float: left;
+    opacity: 1;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+.tile-animated {
+    opacity: 0;
+}
+.css3-preload .sliced * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+#teamname {
+    margin-top: 50px;
+    padding: 50px;
+    margin: auto;
+    display: none;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 4em;
+  }
