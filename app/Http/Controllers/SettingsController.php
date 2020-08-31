@@ -9,11 +9,13 @@ class SettingsController extends Controller
 {
     public function index(){
 
+        echo (session('lastGamebtn'));
+
         if(session('randomizedGame')){
             $backbutton = array('Random', 'random');
         }
         else if(session('lastGamebtn') == 'home'){
-            $backbutton = array('Home', session('lastGamebtn'));
+            $backbutton = array('Home', '');
         }
         else{
             $backbutton = array(config('gameinfo.pretty_name')[array_search(session('lastGamebtn'), config('gameinfo.raw_name'), true)], session('lastGamebtn'));
