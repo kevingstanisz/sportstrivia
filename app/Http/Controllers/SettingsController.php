@@ -8,9 +8,6 @@ use App\Setting;
 class SettingsController extends Controller
 {
     public function index(){
-
-        echo (session('lastGamebtn'));
-
         if(session('randomizedGame')){
             $backbutton = array('Random', 'random');
         }
@@ -22,38 +19,22 @@ class SettingsController extends Controller
         }
 
         $gamesprobs = array();
-        foreach (config('gameinfo.raw_name') as &$gamecategory) {
+        $lastgame = config('gameinfo.raw_name')[0];
+        foreach (config('gameinfo.raw_name') as $gamecategory) {
+            if($gamecategory == $backbutton[1]){
+                $lastgame = $gamecategory;
+            }
+
             $probabilities = Setting::select('category', $gamecategory)->where($gamecategory, '>=', 0)->get();
             array_push($gamesprobs, $probabilities);
         }
 
-
-        $lastgame = 'logologic';
-        //print_r($gamesprobs);
-
-        // if($game == 'logologic' || $game == 'spellbinders'){
-             $leaguenames = array('NBA', 'NBA Throwback', 'MLB', 'MLB Throwback', 'NFL', 'NFL Throwback', 'NHL', 'Power 5', 'Remaining FBS', 'FCS', 'MLS', 'Soccer');
-        // }
-        // else{
-        //     $leaguenames = array('NBA', 'NBA Throwback', 'MLB', 'MLB Throwback', 'NFL', 'NFL Throwback', 'NHL', 'Soccer', 'Tennis', 'Golf', 'Auto Racing', 'Combat');
-        // }
-
-        foreach($probabilities as $key=>$rawleague){
-            $rawleague->category = $leaguenames[$key];
-        }
+        $prettycategories = config('categories');
         
-        $newgames = array();
-        array_push($newgames, 'logologic');
-        array_push($newgames, 'spellbinders');
-        array_push($newgames, 'photofinish');
+        $newgames = config('gameinfo.raw_name');
+        $newprettygames = config('gameinfo.pretty_name');
 
-        $newprettygames = array();
-        array_push($newprettygames, 'Logo Logic');
-        array_push($newprettygames, 'Spell Binders');
-        array_push($newprettygames, 'Photo Finish');
-
-
-        return view('pages.newsettings')->with('league_probs', $probabilities)->with('gamesprobs', $gamesprobs)->with('newgames', $newgames)->with('newprettygames', $newprettygames)->with('lastgame', $lastgame)->with('backbutton', $backbutton)->with('lastGamebtn', session('lastGamebtn'));
+        return view('pages.newsettings')->with('league_probs', $probabilities)->with('gamesprobs', $gamesprobs)->with('newgames', $newgames)->with('newprettygames', $newprettygames)->with('prettycategories', $prettycategories)->with('lastgame', $lastgame)->with('backbutton', $backbutton)->with('lastGamebtn', session('lastGamebtn'));
     }
 
     public function update(Request $request){
