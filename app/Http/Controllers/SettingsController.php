@@ -38,31 +38,13 @@ class SettingsController extends Controller
     }
 
     public function update(Request $request){
+        $idtoupdate = array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 7, 12, 13, 14, 15, 16);
 
-        print_r(count($request->input("dollars_bet")));
+        foreach ($request->input("categoryprob") as $index=>$newprob){ 
+            $game = config('gameinfo.raw_name')[$index / 12];
 
-        foreach ($request->input("dollars_bet") as $index=>$newbet){ 
-            print_r($newbet);
-            echo " ";
-            print_r($index);
-            echo " ";
+            Setting::where('id',$idtoupdate[$index])->update(array($game=>$newprob));
         }
-
-            $idtoupdate = array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 7, 12, 13, 14, 15, 16);
-            echo count($idtoupdate);
-
-            foreach ($request->input("dollars_bet") as $index=>$newbet){ 
-                if($index < 12){
-                    $game = 'logologic';
-                }
-                else if($index < 24){
-                    $game = 'spellbinders';
-                }
-                else{
-                    $game = 'photofinish';
-                }
-                Setting::where('id',$idtoupdate[$index])->update(array($game=>$newbet));
-            }
 
         return redirect('/settings')->with('success', 'Settings Updated');
     }

@@ -59,7 +59,7 @@
         <td style="width: 20%">{{$prettycategories[$newgames[$loop->parent->index]][$loop->index]}}</td>
         <td style="width: 80%">
           <div class="range-slider">
-            <input class="range-slider__range" type="range" name = "dollars_bet[]" value={{$gamepro->$game}} min="0" max="100">
+            <input class="range-slider__range" type="range" name = "categoryprob[]" value={{$gamepro->$game}} min="0" max="100">
             <span class="range-slider__value">0</span>
           </div>
         </td>
