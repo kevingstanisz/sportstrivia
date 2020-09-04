@@ -20,6 +20,7 @@ Route::get('/spellbinders', 'PagesController@spellbinders');
 Route::post('/update', 'SettingsController@update');
 Route::get('/photofinish', 'PagesController@photofinish');
 Route::get('/random', 'PagesController@random');
+Route::get('/newhome', 'PagesController@newhome');
 
 
 Auth::routes();

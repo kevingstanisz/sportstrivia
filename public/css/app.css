@@ -2655,6 +2655,8 @@ textarea.form-control.is-invalid {
 }
 
 .btn {
+  filter: blur(0);
+	-webkit-filter: blur(0);
   display: inline-block;
   font-weight: 400;
   color: #212529;

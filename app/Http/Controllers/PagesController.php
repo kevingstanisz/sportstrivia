@@ -202,5 +202,9 @@ class PagesController extends Controller
         
         return view('pages.photofinish')->with('file_path', $file_path)->with('playername', $playername);
     }
+
+    public function newhome(){
+        return view('pages.newhome');
+    }
 }
 

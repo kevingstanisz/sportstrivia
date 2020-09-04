@@ -11,6 +11,8 @@
 
 /* General button style (reset) */
 .btn {
+	filter: blur(0);
+	-webkit-filter: blur(0);
 	line-height: 1.15;
 	border: none;
 	font-family: inherit;
