@@ -17,14 +17,14 @@
 	</head>
 	<body>
 		<div></div>
-		<button class="btn btn-4 btn-4c icon-arrow-right centerbutton quadrantTwo" onclick="location.href='/logologic';">Logo Logic</button>
+		<button class="btn btn-4 btn-4c icon-arrow-right centerbutton quadrantTwo btn-4front" onclick="location.href='/logologic';">Logo Logic</button>
 		<div></div>
-		<button class="btn btn-4 btn-4c icon-arrow-right centerbutton quadrantOne" onclick="location.href='/spellbinders';">Spell Binders</button>
+		<button class="btn btn-4 btn-4c icon-arrow-right centerbutton quadrantOne btn-4front" onclick="location.href='/spellbinders';">Spell Binders</button>
 		<div></div>
-		<button class="btn btn-4 btn-4c icon-arrow-right centerbutton quadrantThree" onclick="location.href='/photofinish';">Photo Finish</button>
+		<button class="btn btn-4 btn-4c icon-arrow-right centerbutton quadrantThree btn-4front" onclick="location.href='/photofinish';">Photo Finish</button>
 		<div class = "halfdiv"></div>
-		<button class="btn btn-4 btn-4c icon-arrow-right centerbutton quadrantFourTop" onclick="location.href='/random';">Random</button>
+		<button class="btn btn-4 btn-4c icon-arrow-right centerbutton quadrantFourTop btn-4front" onclick="location.href='/random';">Random</button>
 		<div class = "halfdiv"></div>
-		<button class="btn btn-4 btn-4c icon-arrow-right centerbutton quadrantFourBottom" onclick="location.href='/settings';">Settings</button>
+		<button class="btn btn-4 btn-4c icon-arrow-right centerbutton quadrantFourBottom btn-4front" onclick="location.href='/settings';">Settings</button>
 	</body>
 </html>
