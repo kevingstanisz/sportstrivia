@@ -16,9 +16,15 @@
         {{-- <script src="{{asset('CreativeButtons/js/modernizr.custom.js')}}"></script> --}}
 	</head>
 	<body>
-        <div><div class = "noblur"><button class="btn btn-4 btn-4c icon-arrow-right centerbutton" onclick="location.href='/logologic';">Logo Logic</button></div></div>
-        <div><button class="btn btn-4 btn-4c icon-arrow-right centerbutton" onclick="location.href='/spellbinders';">Spell Binders</button></div>
-        <div><button class="btn btn-4 btn-4c icon-arrow-right centerbutton" onclick="location.href='/photofinish';">Photo Finish</button></div>
-        <div></div>
+		<div></div>
+		<button class="btn btn-4 btn-4c icon-arrow-right centerbutton quadrantTwo" onclick="location.href='/logologic';">Logo Logic</button>
+		<div></div>
+		<button class="btn btn-4 btn-4c icon-arrow-right centerbutton quadrantOne" onclick="location.href='/spellbinders';">Spell Binders</button>
+		<div></div>
+		<button class="btn btn-4 btn-4c icon-arrow-right centerbutton quadrantThree" onclick="location.href='/photofinish';">Photo Finish</button>
+		<div class = "halfdiv"></div>
+		<button class="btn btn-4 btn-4c icon-arrow-right centerbutton quadrantFourTop" onclick="location.href='/random';">Random</button>
+		<div class = "halfdiv"></div>
+		<button class="btn btn-4 btn-4c icon-arrow-right centerbutton quadrantFourBottom" onclick="location.href='/settings';">Settings</button>
 	</body>
 </html>

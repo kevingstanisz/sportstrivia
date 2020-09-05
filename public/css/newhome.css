@@ -17,6 +17,17 @@ div {
     display: flex;
     justify-content: center;
     align-items: center;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+div:hover {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+.halfdiv {
+    height: 25%;
 }
 
 
@@ -48,14 +59,9 @@ div:nth-of-type(4) {
     border-left: 1px solid #f00;
 }
 
-.noblur {
-    z-index: 9999;
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
+div:nth-of-type(5) {
+    background: #ddd;
+    border-top: 1px solid #f00;
+    border-left: 1px solid #f00;
 }
 
-.button {
-        z-index: 9999;
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
-}
