@@ -12,21 +12,19 @@
 		<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="{{asset('CreativeButtons/css/default.css')}}" />
         <link rel="stylesheet" type="text/css" href="{{asset('CreativeButtons/css/component.css')}}" />
+        <link rel="stylesheet" type="text/css" href="{{asset('css/newhome.css')}}" />
         {{-- <script src="{{asset('CreativeButtons/js/modernizr.custom.js')}}"></script> --}}
 	</head>
-	<body style = "background:#13294b">
-		<div id="app">
-			<br>
-			<div class='container'>
-				@include('inc.messages')
-				<section>
-					<p><button class="btn btn-4 btn-4c icon-arrow-right centerbutton" onclick="location.href='/logologic';">Logo Logic</button></p>
-					<p><button class="btn btn-4 btn-4c icon-arrow-right centerbutton" onclick="location.href='/spellbinders';">Spell Binders</button></p>
-					<p><button class="btn btn-4 btn-4c icon-arrow-right centerbutton" onclick="location.href='/photofinish';">Photo Finish</button></p>
-					<p><button class="btn btn-4 btn-4c icon-arrow-right centerbutton" onclick="location.href='/random';">Random</button></p>
-					<p><button class="btn btn-4 btn-4c icon-arrow-right centerbutton" onclick="location.href='/settings';">Settings</button></p>
-				</section>
-			</div>
-		</div>
+	<body>
+		<div></div>
+		<button class="btn btn-4 btn-4c icon-arrow-right centerbutton quadrantTwo btn-4front" onclick="location.href='/logologic';">Logo Logic</button>
+		<div></div>
+		<button class="btn btn-4 btn-4c icon-arrow-right centerbutton quadrantOne btn-4front" onclick="location.href='/spellbinders';">Spell Binders</button>
+		<div></div>
+		<button class="btn btn-4 btn-4c icon-arrow-right centerbutton quadrantThree btn-4front" onclick="location.href='/photofinish';">Photo Finish</button>
+		<div class = "halfdiv"></div>
+		<button class="btn btn-4 btn-4c icon-arrow-right centerbutton quadrantFourTop btn-4front" onclick="location.href='/random';">Random</button>
+		<div class = "halfdiv"></div>
+		<button class="btn btn-4 btn-4c icon-arrow-right centerbutton quadrantFourBottom btn-4front" onclick="location.href='/settings';">Settings</button>
 	</body>
 </html>
