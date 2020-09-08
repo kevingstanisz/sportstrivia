@@ -4,7 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>Creative Button Styles </title>
+		<title>Sports Trivia </title>
+		<link rel="shortcut icon" href="../sports.png"> 
 		<meta name="description" content="Creative Button Styles  - Modern and subtle styles &amp; effects for buttons" />
 		<meta name="keywords" content="button styles, css3, modern, flat button, subtle, effects, hover, web design" />
 		<meta name="author" content="Codrops" />

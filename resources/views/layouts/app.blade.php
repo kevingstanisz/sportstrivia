@@ -7,7 +7,10 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Sports Trivia</title>
+    <link rel="icon" href="{{ URL::asset('favicon.ico') }}" type="image/x-icon"/>
+
+    
 
     <!-- Scripts -->
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -26,6 +29,8 @@
     <link href="{{ asset('css/spellbinders.css') }}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{asset('CreativeButtons/css/default.css')}}" />
     <link rel="stylesheet" type="text/css" href="{{asset('CreativeButtons/css/component.css')}}" />
+
+    <link rel="icon" href="{{ URL::asset('sports.png') }}" type="image/x-icon"/>
 
 </head>
 <body>
