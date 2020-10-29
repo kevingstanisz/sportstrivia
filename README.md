@@ -37,7 +37,7 @@ The athlete gradually comes into focus.
 
 
 #### New:
-![Sports Trivia Photo Finish](demo/photifinish.gif)
+![Sports Trivia Photo Finish](demo/st_photofinish.gif)
 
 ## Intro / Settings 
 Select which categories you want to see for each game in the new version. No more having to guess NBA players if you don't watch the NBA!
