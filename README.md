@@ -8,13 +8,13 @@ The fun of the game is to yell out as fast as you can what you think the team is
 (The GIF's aren't the highest quality, so check out the website for the full experience.)
 
 
-Logo Logic 
+## Logo Logic 
 The logo slowly comes together. 
 
-Original: 
+#### Original: 
 ![Scene It Logo Logic](demo/logologic.gif)
 
 
-New:
+#### New:
 ![Sports Trivia Logo Logic](demo/st_logologic.gif)
 
