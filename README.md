@@ -18,3 +18,33 @@ The logo slowly comes together.
 #### New:
 ![Sports Trivia Logo Logic](demo/st_logologic.gif)
 
+
+## Spell Binders 
+The team name appears letter by letter on a "Wheel Of Fortune" board.
+
+#### Original: 
+![Scene It Spell Binders](demo/spellbinders.gif)
+
+
+#### New:
+![Sports Trivia Spell Binders](demo/st_spellbinders.gif)
+
+## Photo Finish
+The athlete gradually comes into focus. 
+
+#### Original: 
+![Scene It Photo Finish](demo/photofinish.gif)
+
+
+#### New:
+![Sports Trivia Photo Finish](demo/photifinish.gif)
+
+## Intro / Settings 
+Select which categories you want to see for each game in the new version. No more having to guess NBA players if you don't watch the NBA!
+
+#### Original: 
+![Scene It Intro and Settings](demo/intro.gif)
+
+
+#### New:
+![Sports Trivia Intro and Settings](demo/st_intro.gif)
